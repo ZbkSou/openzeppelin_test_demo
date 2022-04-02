@@ -20,6 +20,11 @@ async function main() {
   await greeter.deployed();
 
   console.log("Greeter deployed to:", greeter.address);
+
+  console.log("is2D:", await  greeter.is2D());
+  console.log("skinColor:", await greeter.skinColor());
+  console.log("is2DandSkinColor:", await greeter.is2DandSkinColor());
+
 }
 
 // We recommend this pattern to be able to use async/await everywhere
