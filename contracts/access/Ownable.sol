@@ -15,16 +15,12 @@ abstract contract Ownable is Context{
     }
     /**
      * @notice 返回所有者
-     * @return address
      */
     function owner() public view virtual returns (address){
         return _owner;
     }
-
     /**
      * @notice 检查调用者是否为所有者
-     * @param
-     * @return
      */
     modifier onlyOwner(){
         require(owner() == _msgSender(),"Ownable: caller is not the owner");

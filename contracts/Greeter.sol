@@ -19,9 +19,9 @@ contract Greeter is Simpson{
         console.log("Changing greeting from '%s' to '%s'", greeting, _greeting);
         greeting = _greeting;
     }
-    function is2DandSkinColor() external view returns (bool){
+    function is2DandSkinColor() external view returns (bytes4){
         bytes4 is2D = 0x60c33c60;
-        return is2D == this.is2D.selector^this.skinColor.selector;
+        return type(Simpson).interfaceId;
     }
     function is2D() external override view  returns (bytes4){
         return this.is2D.selector;

@@ -4,12 +4,11 @@ pragma solidity ^0.8.0;
  * @notice 试来使外界查询合约是否支持某方法
  * @author zhao
  */
-contract IERC165 {
-
+interface  IERC165 {
     /**
      * @notice 如果此协定实现了由  interfaceId 定义的接口，则返回 true
-     * @param  interfaceId
+     * @param  interfaceId interfaceId
      * @return bool
      */
-    function supportsInterface(bytes4 interfaceId) external view returns(bool);
+    function supportsInterface(bytes4 interfaceId) external  view returns(bool);
 }

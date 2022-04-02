@@ -45,7 +45,7 @@ abstract contract AccessControl is Context, IAccessControl, ERC165 {
 
     /**
      * @notice IERC165-supportsInterface
-     * @param  interfaceId
+     * @param  interfaceId interfaceId
      * @return bool
      */
     function supportsInterface(bytes4 interfaceId) public view virtual override returns (bool){
@@ -54,8 +54,6 @@ abstract contract AccessControl is Context, IAccessControl, ERC165 {
 
     /**
      * @notice 判断 account 是否拥有 role
-     * @param  role
-     * @param  account
      * @return bool
      */
     function hasRole(bytes32 role, address account) public view virtual override returns (bool){
@@ -64,8 +62,6 @@ abstract contract AccessControl is Context, IAccessControl, ERC165 {
 
     /**
      * @notice 检查 调用者是否拥有 role ，没有则抛出异常
-     * @param
-     * @return
      */
     function _checkRole(bytes32 role) internal view virtual {
         _checkRole(role, _msgSender());
@@ -73,9 +69,7 @@ abstract contract AccessControl is Context, IAccessControl, ERC165 {
 
     /**
      * @notice 检查 account 是否拥有 role ，没有会抛出异常
-     * @param
-     * @return /^AccessControl: account (0x[0-9a-f]{40}) is missing role (0x[0-9a-f]{64})$/
-     */
+    */
     function _checkRole(bytes32 role, address account) internal view virtual {
         if (!hasRole(role, account)) {
             revert(string(
@@ -91,8 +85,6 @@ abstract contract AccessControl is Context, IAccessControl, ERC165 {
 
     /**
      * @notice 查询 role 的管理角色
-     * @param  role
-     * @return
      */
     function getRoleAdmin(bytes32 role) public view virtual override returns (bytes32){
         return _roles[role].adminRole;
@@ -101,8 +93,6 @@ abstract contract AccessControl is Context, IAccessControl, ERC165 {
     /**
      * @notice account 没有 role 的话会触发 RoleGranted 事件
      * 调用者拥有 role 的 admin role
-     * @param
-     * @return 
      */
     function grantRole(bytes32 role, address account) public virtual override onlyRole(getRoleAdmin(role)) {
         _grantRole(role, account);
@@ -110,8 +100,6 @@ abstract contract AccessControl is Context, IAccessControl, ERC165 {
 
     /**
      * @notice 撤销“account”的“role”
-     * @param
-     * @return
      */
     function revokeRole(bytes32 role, address account) public virtual override onlyRole(getRoleAdmin(role)) {
         _revokeRole(role, account);
@@ -121,7 +109,6 @@ abstract contract AccessControl is Context, IAccessControl, ERC165 {
  * @notice 释放角色
  * @param  role 角色
  * @param  account 账号地址
- * @return
  */
     function renounceRole(bytes32 role, address account) public virtual override {
         require(account == _msgSender(), "AccessControl: can only renounce roles for self");
@@ -132,16 +119,12 @@ abstract contract AccessControl is Context, IAccessControl, ERC165 {
      * @notice 给 `account` 赋予 `role` ，account 只有之前没有 role的时候才会发送
      * RoleGranted 事件，
      * 注意：此方法是内部方法在构造方法中初始化时被使用。
-     * @param
-     * @return
      */
     function _setupRole(bytes32 role, address account) internal virtual {
         _grantRole(role, account);
     }
     /**
      * @notice role 设置 adminRole , 会发送 RoleAdminChanged 事件
-     * @param
-     * @return
      */
     function _setRoleAdmin(bytes32 role, bytes32 adminRole) internal virtual {
         bytes32 previousAdminRole = getRoleAdmin(role);
@@ -151,8 +134,6 @@ abstract contract AccessControl is Context, IAccessControl, ERC165 {
 
     /**
      * @notice 给与 account role ，如果之前没有拥有该 role 会发送 RoleGranted 事件
-     * @param
-     * @return
      */
     function _grantRole(bytes32 role, address account) internal virtual {
         if (!hasRole(role, account)) {
@@ -163,8 +144,6 @@ abstract contract AccessControl is Context, IAccessControl, ERC165 {
 
     /**
      * @notice 撤销 account 的 role
-     * @param
-     * @return
      */
     function _revokeRole(bytes32 role, address account) internal virtual {
         if (hasRole(role, account)) {
