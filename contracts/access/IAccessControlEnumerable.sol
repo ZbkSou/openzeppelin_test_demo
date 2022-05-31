@@ -1,5 +1,5 @@
 pragma solidity ^0.8.0;
-import "./IAccessControl.sol"
+import "./IAccessControl.sol";
 /**
  * @dev  AccessControlEnumerable 的对外接口 用来申报 ERC165
  * @notice
@@ -11,7 +11,7 @@ interface IAccessControlEnumerable is IAccessControl {
 * 值，非包含。
 * * 角色承担者没有以任何特定方式排序，其顺序可能
 * 在任何点发生变化。
-* * WARNING: 当使用{ getrollemember }和{ getrollemembercount }时，请确保
+* * WARNING: 当使用{ getrolemember }和{ getrolemembercount }时，请确保
 * 在同一块上执行所有查询。更多信息请参见以下 https://forum.openzeppelin.com/t/iterating-over-elements-on-enumerableset-in-openzeppelin-contracts/2296。
 */
 function getRoleMember(bytes32 role, uint256 index) external view returns (address);
