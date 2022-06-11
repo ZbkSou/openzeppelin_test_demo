@@ -35,27 +35,27 @@ library EnumerableSet {
         }
     }
 
-    function _remove(Set storage set, bytes32 value) private returns (bool){
-        uint256 valueIndex = set._indexes[value];
-        if(valueIndex != 0){
-            uint256 toDeleteIndex = valueIndex - 1;
-            uint256 lastIndex = set._values.length - 1;
-
-            if(lastIndex != toDeleteIndex){
-                // 把最后一个覆盖到被删除的位置
-                bytes32 lastValue = set._values[lastValue];
-                set._values[toDeleteIndex] = lastValue;
-                set._indexes[lastValue] = valueIndex;
-            }
-            //删除最后一个
-            set._values.pop();
-
-            delete set._indexes[value];
-            return true;
-
-
-        }
-    }
+//    function _remove(Set storage set, bytes32 value) private returns (bool){
+//        uint256 valueIndex = set._indexes[value];
+//        if(valueIndex != 0){
+//            uint256 toDeleteIndex = valueIndex - 1;
+//            uint256 lastIndex = set._values.length - 1;
+//
+//            if(lastIndex != toDeleteIndex){
+//                // 把最后一个覆盖到被删除的位置
+//                bytes32 lastValue = set._values[lastValue];
+//                set._values[toDeleteIndex] = lastValue;
+//                set._indexes[lastValue] = valueIndex;
+//            }
+//            //删除最后一个
+//            set._values.pop();
+//
+//            delete set._indexes[value];
+//            return true;
+//
+//
+//        }
+//    }
 
     function _contains(Set storage set, bytes32 value) private view returns(bool){
         return set._indexes[value] !=0;

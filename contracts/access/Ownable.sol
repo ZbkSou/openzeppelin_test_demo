@@ -29,6 +29,7 @@ abstract contract Ownable is Context{
 
     /**
     * 放弃合约所有权只能由所有者调用
+    * virtual 修饰的方法可以被继承重写
     */
     function renounceOwnership() public virtual onlyOwner{
         _transferOwnership(address(0));
