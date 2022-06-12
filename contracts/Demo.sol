@@ -15,7 +15,7 @@ contract Demo is Ownable{
     function getGreeting() public view returns (string memory){
         return greeting;
     }
-
+    // 使用 onlyOwner() 检查调用者只能是合约所有者
     function setGreeting(string memory greet) public onlyOwner() {
         greeting = greet;
     }
