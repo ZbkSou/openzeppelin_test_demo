@@ -19,9 +19,9 @@ task("accounts", "Prints the list of accounts", async (taskArgs, hre) => {
 module.exports = {
   solidity: "0.8.4",
   networks: {
-    jaztest: {
-      url:"http://52.206.88.57:9945/",
-      accounts: ['0x087ba81b571d8154bea7fa65c4cadf79cba7ca38c40554a9bae3146c4c035c7b']
+    localhost: {
+      url:"http://127.0.0.1:8545/",
+      accounts: ['0xac0974bec39a17e36ba4a6b4d238ff944bacb478cbed5efcae784d7bf4f2ff80']
     }
   }
 };
