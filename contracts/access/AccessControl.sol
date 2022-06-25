@@ -28,7 +28,8 @@ import "../utils/introspection/ERC165.sol";
  * 授予和撤销此角色。应该采取额外的预防措施来保护已经授予它的账户。
  */
 abstract contract AccessControl is Context, IAccessControl, ERC165 {
-    // RoleData 保存了上级 role， 地址是否拥有权限的mapping,roledata 详情信息
+    // RoleData 保存了上级 role(adminRole)， 地址是否拥有权限的mapping
+    // roledata 详情信息
     struct RoleData {
         mapping(address => bool) members;
         bytes32 adminRole;

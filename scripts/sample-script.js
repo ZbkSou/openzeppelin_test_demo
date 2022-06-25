@@ -29,7 +29,7 @@ async function main() {
   console.log("transferOwnership:", await  greeter.transferOwnership("0x70997970C51812dc3A010C7d01b50e0d17dc79C8"));
   console.log("owner():", await  greeter.owner());
   // console.log("setGreeting:", await  greeter.setGreeting("Hel"));
-  console.log("intToString():", await  greeter.intToString(123123));
+  console.log("toHexString():", await  greeter.toHexString(123123));
 }
 
 // We recommend this pattern to be able to use async/await everywhere
