@@ -2,12 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="223df28f-6071-49f8-b208-a964c66662ef" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/contracts/AccessDemo.sol" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/contracts/Demo.sol" beforeDir="false" afterPath="$PROJECT_DIR$/contracts/Demo.sol" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/contracts/access/AccessControl.sol" beforeDir="false" afterPath="$PROJECT_DIR$/contracts/access/AccessControl.sol" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scripts/sample-script.js" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/sample-script.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/contracts/AccessDemo.sol" beforeDir="false" afterPath="$PROJECT_DIR$/contracts/AccessDemo.sol" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/contracts/utils/structs/EnumerableSet.sol" beforeDir="false" afterPath="$PROJECT_DIR$/contracts/utils/structs/EnumerableSet.sol" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -212,7 +209,7 @@
       <workItem from="1655219631775" duration="1257000" />
       <workItem from="1655642610326" duration="4854000" />
       <workItem from="1656085166527" duration="596000" />
-      <workItem from="1656147578528" duration="10235000" />
+      <workItem from="1656147578528" duration="26009000" />
     </task>
     <task id="LOCAL-00001" summary="feat: accessControl">
       <created>1648877679562</created>
@@ -249,7 +246,14 @@
       <option name="project" value="LOCAL" />
       <updated>1655739205497</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="update: 增加 demo erc165">
+      <created>1656172824630</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1656172824630</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
@@ -321,7 +325,8 @@
     <MESSAGE value="feat: accessControl" />
     <MESSAGE value="fix: 调整注释，是之正常编译" />
     <MESSAGE value="update: 增加 demo 合约，给出每个方法得使用例子" />
-    <option name="LAST_COMMIT_MESSAGE" value="update: 增加 demo 合约，给出每个方法得使用例子" />
+    <MESSAGE value="update: 增加 demo erc165" />
+    <option name="LAST_COMMIT_MESSAGE" value="update: 增加 demo erc165" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/.gitignore">
