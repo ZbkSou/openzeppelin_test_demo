@@ -17,6 +17,7 @@ interface ISimpson {
 }
 
 contract Demo is Ownable, ERC165, ISimpson{
+    //
     using Strings for uint256;
     string private greeting;
     constructor(string memory _greeting) {
@@ -34,6 +35,7 @@ contract Demo is Ownable, ERC165, ISimpson{
 
     // 使用 utils/Strings 示例
     // 只读取状态变量得时候用view 修饰，没有读用pure
+    // 使用的时候 number.toHexString() 相当于 toHexString(number) 作为第一个参数
     function toHexString(uint256  number) public pure returns (string memory){
        return number.toHexString();
     }

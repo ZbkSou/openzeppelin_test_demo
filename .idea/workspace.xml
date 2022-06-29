@@ -3,8 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="223df28f-6071-49f8-b208-a964c66662ef" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/contracts/AccessDemo.sol" beforeDir="false" afterPath="$PROJECT_DIR$/contracts/AccessDemo.sol" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/contracts/utils/structs/EnumerableSet.sol" beforeDir="false" afterPath="$PROJECT_DIR$/contracts/utils/structs/EnumerableSet.sol" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/contracts/Demo.sol" beforeDir="false" afterPath="$PROJECT_DIR$/contracts/Demo.sol" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/contracts/utils/Strings.sol" beforeDir="false" afterPath="$PROJECT_DIR$/contracts/utils/Strings.sol" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -210,6 +210,8 @@
       <workItem from="1655642610326" duration="4854000" />
       <workItem from="1656085166527" duration="596000" />
       <workItem from="1656147578528" duration="26009000" />
+      <workItem from="1656431344339" duration="668000" />
+      <workItem from="1656514138926" duration="2325000" />
     </task>
     <task id="LOCAL-00001" summary="feat: accessControl">
       <created>1648877679562</created>
