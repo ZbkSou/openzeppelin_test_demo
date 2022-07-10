@@ -3,7 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="223df28f-6071-49f8-b208-a964c66662ef" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/contracts/AccessDemo.sol" beforeDir="false" afterPath="$PROJECT_DIR$/contracts/AccessDemo.sol" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/contracts/access/AccessControlEnumerable.sol" beforeDir="false" afterPath="$PROJECT_DIR$/contracts/access/AccessControlEnumerable.sol" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -131,13 +131,15 @@
     </key>
   </component>
   <component name="RunManager">
-    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
+    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
           <option name="containerStateName" value="" />
         </value>
       </option>
-      <option name="TEST_OBJECT" value="class" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -212,7 +214,8 @@
       <workItem from="1656431344339" duration="668000" />
       <workItem from="1656514138926" duration="2325000" />
       <workItem from="1657207319122" duration="251000" />
-      <workItem from="1657207596265" duration="1921000" />
+      <workItem from="1657207596265" duration="3023000" />
+      <workItem from="1657466177485" duration="1337000" />
     </task>
     <task id="LOCAL-00001" summary="feat: accessControl">
       <created>1648877679562</created>
@@ -256,7 +259,14 @@
       <option name="project" value="LOCAL" />
       <updated>1656172824630</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="update: 增加 demo erc165">
+      <created>1657210447586</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1657210447586</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
