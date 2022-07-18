@@ -4,6 +4,7 @@
     <list default="true" id="223df28f-6071-49f8-b208-a964c66662ef" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/contracts/access/AccessControlEnumerable.sol" beforeDir="false" afterPath="$PROJECT_DIR$/contracts/access/AccessControlEnumerable.sol" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/contracts/utils/structs/EnumerableSet.sol" beforeDir="false" afterPath="$PROJECT_DIR$/contracts/utils/structs/EnumerableSet.sol" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -131,15 +132,13 @@
     </key>
   </component>
   <component name="RunManager">
-    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
+    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
           <option name="containerStateName" value="" />
         </value>
       </option>
-      <option name="TEST_OBJECT" value="CLASS" />
-      <properties />
-      <listeners />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -216,6 +215,7 @@
       <workItem from="1657207319122" duration="251000" />
       <workItem from="1657207596265" duration="3023000" />
       <workItem from="1657466177485" duration="1337000" />
+      <workItem from="1658155614712" duration="2918000" />
     </task>
     <task id="LOCAL-00001" summary="feat: accessControl">
       <created>1648877679562</created>

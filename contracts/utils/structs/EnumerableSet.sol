@@ -1,6 +1,7 @@
 pragma solidity ^0.8.0;
 /**
- * @dev 
+ * @dev Set 由两部分组成 存 values 的数组，
+ * 标记 values 在 数组中对应位置的 mapping(bytes32 => uint256) map
  * @notice
  * 元素 以常量形式 add， remove， check 时间复杂度是O(1).
  * 元素枚举 O(n)
