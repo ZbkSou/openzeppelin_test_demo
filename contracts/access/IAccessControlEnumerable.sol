@@ -2,7 +2,7 @@ pragma solidity ^0.8.0;
 import "./IAccessControl.sol";
 /**
  * @dev  AccessControlEnumerable 的对外接口 用来申报 ERC165
- * @notice
+ * @notice  在 AccessControl 基础上增加了 获得角色所有者 功能
  * @author zhao
  */
 interface IAccessControlEnumerable is IAccessControl {
