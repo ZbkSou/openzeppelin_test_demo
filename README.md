@@ -1,4 +1,16 @@
+# hardhat 使用
+
+`npx hardhat compile` 编译
+`npx hardhat run scripts/deploy.js --network <network-name>`
+
+
 # openzeppelin 中文使用说明
+
+` npx hardhat compile` 编译合约
+
+`npx hardhat node` 启动网络
+
+`npx hardhat run scripts/sample-script.js --network localhost` 执行测试脚本
 
 ## access
 
