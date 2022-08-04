@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="223df28f-6071-49f8-b208-a964c66662ef" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/contracts/token/ERC20/IERC20.sol" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -111,7 +110,7 @@
     <property name="aspect.path.notification.shown" value="true" />
     <property name="go.gopath.indexing.explicitly.defined" value="true" />
     <property name="go.import.settings.migrated" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/scripts" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../../project/AndroidProject/plug" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -217,6 +216,7 @@
       <workItem from="1658155614712" duration="2918000" />
       <workItem from="1658331256735" duration="588000" />
       <workItem from="1658638316523" duration="13375000" />
+      <workItem from="1659278620810" duration="4528000" />
     </task>
     <task id="LOCAL-00001" summary="feat: accessControl">
       <created>1648877679562</created>
