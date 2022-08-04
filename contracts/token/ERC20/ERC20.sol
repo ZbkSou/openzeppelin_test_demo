@@ -79,6 +79,24 @@ contract ERC20 is Context, IERC20, IEC20Metadata {
         _approve(owner, spender, allowance(owner, spender) + addedValue);
         return true;
     }
+    /**
+    * @dev 减少授权金额
+    * （unchecked或wrapping）截断模式 既不处理溢出如果溢出直接输出结果
+    * 如果不设置默认为 checked 模式 如果溢出会异常退回
+    */
+    function decreaseAllowance(address spender, uint256 subtractedValue) public virtual returns (bool){
+        address owner = _msgSender();
+        uint256 currentAllowance = allowance(owner, spender);
+        require(currentAllowance >= subtractedValue, "ERC20: decreased allowance below zero");
+    unchecked{
+        _approve(owner, spender, currentAllowance - subtractedValue);
+    }
+        return true;
+    }
 
+
+    function _transfer(address from, address to, uint256 amount) internal virtual {
+
+    }
 
 }
