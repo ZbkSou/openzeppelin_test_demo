@@ -2,10 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="223df28f-6071-49f8-b208-a964c66662ef" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/contracts/token/ERC20/ERC20.sol" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/contracts/token/ERC20/extensions/IEC20Metadata.sol" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/contracts/token/ERC20/IERC20.sol" beforeDir="false" afterPath="$PROJECT_DIR$/contracts/token/ERC20/IERC20.sol" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/contracts/token/ERC20/ERC20.sol" beforeDir="false" afterPath="$PROJECT_DIR$/contracts/token/ERC20/ERC20.sol" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/node_modules/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -31,7 +29,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/contracts/token/ERC20/IERC20.sol">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="273">
+            <state relative-caret-position="-649">
               <caret line="7" column="19" selection-start-line="7" selection-start-column="19" selection-end-line="7" selection-end-column="19" />
             </state>
           </provider>
@@ -40,8 +38,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/contracts/token/ERC20/ERC20.sol">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="741">
-              <caret line="19" selection-start-line="19" selection-end-line="19" />
+            <state relative-caret-position="482">
+              <caret line="81" selection-start-line="81" selection-end-line="81" />
             </state>
           </provider>
         </entry>
@@ -67,8 +65,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/contracts/utils/Context.sol">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="273">
-              <caret line="7" column="55" selection-start-line="7" selection-start-column="55" selection-end-line="7" selection-end-column="69" />
+            <state relative-caret-position="117">
+              <caret line="3" column="13" selection-start-line="3" selection-start-column="13" selection-end-line="3" selection-end-column="13" />
             </state>
           </provider>
         </entry>
@@ -90,6 +88,7 @@
       <find>hasRole</find>
       <find>DEFAULT_ADMIN_ROLE</find>
       <find>String</find>
+      <find>_transfer</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -133,10 +132,10 @@
     <option name="directoryName" value="qw4r05o7" />
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="2498" />
-    <option name="y" value="158" />
+    <option name="x" value="2781" />
+    <option name="y" value="292" />
     <option name="width" value="994" />
-    <option name="height" value="563" />
+    <option name="height" value="775" />
   </component>
   <component name="ProjectId" id="2AZaSpfqAp0uQct0VBoE5pN6PIR" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -316,6 +315,7 @@
       <workItem from="1658331256735" duration="588000" />
       <workItem from="1658638316523" duration="13375000" />
       <workItem from="1659523582493" duration="599000" />
+      <workItem from="1659581109497" duration="4737000" />
     </task>
     <task id="LOCAL-00001" summary="feat: accessControl">
       <created>1648877679562</created>
@@ -384,12 +384,12 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="96908000" />
+    <option name="totallyTimeSpent" value="101645000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="2498" y="158" width="994" height="563" extended-state="0" />
+    <frame x="2781" y="292" width="994" height="775" extended-state="0" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.30513918" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.31156316" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="UI Designer" order="3" />
@@ -416,7 +416,7 @@
       <window_info anchor="right" id="SciView" order="7" />
     </layout>
     <layout-to-restore>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.30513918" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.31156316" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="UI Designer" order="3" />
@@ -576,10 +576,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/contracts/token/ERC20/IERC20.sol">
+    <entry file="file://$PROJECT_DIR$/contracts/access/IAccessControl.sol">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="273">
-          <caret line="7" column="19" selection-start-line="7" selection-start-column="19" selection-end-line="7" selection-end-column="19" />
+        <state relative-caret-position="312">
+          <caret line="8" column="22" selection-start-line="8" selection-start-column="22" selection-end-line="8" selection-end-column="22" />
         </state>
       </provider>
     </entry>
@@ -590,24 +590,24 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/contracts/access/IAccessControl.sol">
+    <entry file="file://$PROJECT_DIR$/contracts/token/ERC20/IERC20.sol">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="312">
-          <caret line="8" column="22" selection-start-line="8" selection-start-column="22" selection-end-line="8" selection-end-column="22" />
+        <state relative-caret-position="-649">
+          <caret line="7" column="19" selection-start-line="7" selection-start-column="19" selection-end-line="7" selection-end-column="19" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/contracts/utils/Context.sol">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="273">
-          <caret line="7" column="55" selection-start-line="7" selection-start-column="55" selection-end-line="7" selection-end-column="69" />
+        <state relative-caret-position="117">
+          <caret line="3" column="13" selection-start-line="3" selection-start-column="13" selection-end-line="3" selection-end-column="13" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/contracts/token/ERC20/ERC20.sol">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="741">
-          <caret line="19" selection-start-line="19" selection-end-line="19" />
+        <state relative-caret-position="482">
+          <caret line="81" selection-start-line="81" selection-end-line="81" />
         </state>
       </provider>
     </entry>

@@ -13,11 +13,72 @@ contract ERC20 is Context, IERC20, IEC20Metadata {
     string private _name;
     string private _symbol;
 
+    uint256 private  _totalSupply;
+
     constructor(string memory name_, string memory symbol_){
         _name = name_;
         _symbol = symbol_;
     }
 
-}
+    function name() public view virtual override returns (string memory){
+        return _name;
+    }
+
+    function symbol() public view virtual override returns (string memory){
+        return _symbol;
+    }
+
+    /**
+     * @notice decimals 用来标记小数点位置，18就是在10 的18次方上
+     * @return
+     */
+    function decimals() public view virtual override returns (uint8){
+        return 18;
+    }
+
+    function totalSupply() public view virtual override returns (uint256){
+        return _totalSupply;
+    }
+    /**
+     * @notice 返回地址的token数量
+     * @return
+     */
+    function balanceOf(address account) public view virtual override returns (uint256){
+        return _balances[account];
+    }
+
+    function transfer(address to, uint256 amount) public virtual override returns (bool){
+        address owner = _msgSender();
+        _transfer(owner, to, amount);
+        return true;
+    }
+
+    /**
+     * @notice 获取授权额度
+     * @return
+     */
+    function allowance(address owner, address spender) public view virtual overide returns (uint256){
+        return _allowances[owner][spender];
+    }
+
+    function approve(address spender, uint256 amount) public virtual override returns (bool){
+        address owner = _msgSender();
+        _approve(owner, spender, amount);
+        return true;
+    }
+
+    function transferFrom(address from, address to, uint256 amount) public virtual override returns (bool){
+        address spender = _msgSender();
+        _spendAllowance(from, spender, amount);
+        _transfer(from, to, amount);
+        return true;
+    }
+
+    function increaseAllowance(address spender, uint256 addedValue) public virtual returns (bool){
+        address owner = _msgSender();
+        _approve(owner, spender, allowance(owner, spender) + addedValue);
+        return true;
+    }
+
 
 }
