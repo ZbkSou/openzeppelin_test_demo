@@ -254,6 +254,10 @@
       </option>
       <option name="passParentEnvs" value="true" />
       <option name="programParameters" />
+      <option name="projectPathOnTarget" />
+      <option name="selectedOptions">
+        <list />
+      </option>
       <option name="workingDirectory" value="" />
       <option name="contractName" value="Greeter" />
       <option name="contractFile" value="$PROJECT_DIR$/contracts/Greeter.sol" />
