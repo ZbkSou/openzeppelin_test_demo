@@ -1,3 +1,9 @@
+# hardhat 使用
+
+`npx hardhat compile` 编译
+`npx hardhat run scripts/deploy.js --network <network-name>`
+
+
 # openzeppelin 中文使用说明
 
 ` npx hardhat compile` 编译合约

@@ -1,5 +1,15 @@
 pragma solidity ^0.8.0;
 
+/**
+ * @notice erc20 包括
+ * totalSupply 返回代币总数，
+ * balanceOf 返回地址所持有的代币数
+ * transfer 交易
+ * allowance 获取授权额度
+ * approve  授权
+ * transferFrom 转移
+ @return
+ */
 interface IERC20 {
     /**
     * @dev token 交易通知
