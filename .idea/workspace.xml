@@ -3,7 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="223df28f-6071-49f8-b208-a964c66662ef" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/语法备忘.md" beforeDir="false" afterPath="$PROJECT_DIR$/语法备忘.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/contracts/token/ERC20/ERC20.sol" beforeDir="false" afterPath="$PROJECT_DIR$/contracts/token/ERC20/ERC20.sol" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -162,15 +162,13 @@
     </key>
   </component>
   <component name="RunManager">
-    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
+    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
           <option name="containerStateName" value="" />
         </value>
       </option>
-      <option name="TEST_OBJECT" value="CLASS" />
-      <properties />
-      <listeners />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -253,6 +251,9 @@
       <workItem from="1659523582493" duration="599000" />
       <workItem from="1659581109497" duration="4737000" />
       <workItem from="1659709580676" duration="3216000" />
+      <workItem from="1659876283333" duration="2293000" />
+      <workItem from="1659879420777" duration="20000" />
+      <workItem from="1659879457753" duration="3772000" />
     </task>
     <task id="LOCAL-00001" summary="feat: accessControl">
       <created>1648877679562</created>
