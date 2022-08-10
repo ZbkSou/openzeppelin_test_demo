@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="223df28f-6071-49f8-b208-a964c66662ef" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/contracts/token/ERC20/ERC20.sol" beforeDir="false" afterPath="$PROJECT_DIR$/contracts/token/ERC20/ERC20.sol" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/node_modules/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -29,7 +28,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/contracts/token/ERC20/IERC20.sol">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-649">
+            <state relative-caret-position="273">
               <caret line="7" column="19" selection-start-line="7" selection-start-column="19" selection-end-line="7" selection-end-column="19" />
             </state>
           </provider>
@@ -131,7 +130,7 @@
   <component name="MacroExpansionManager">
     <option name="directoryName" value="qw4r05o7" />
   </component>
-  <component name="ProjectFrameBounds">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="2781" />
     <option name="y" value="292" />
     <option name="width" value="994" />
@@ -144,6 +143,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -184,7 +184,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
       <pane id="Scope" />
     </panes>
   </component>
@@ -315,7 +314,9 @@
       <workItem from="1658331256735" duration="588000" />
       <workItem from="1658638316523" duration="13375000" />
       <workItem from="1659523582493" duration="599000" />
-      <workItem from="1659581109497" duration="4737000" />
+      <workItem from="1659581109497" duration="4763000" />
+      <workItem from="1659667025548" duration="593000" />
+      <workItem from="1660100721200" duration="592000" />
     </task>
     <task id="LOCAL-00001" summary="feat: accessControl">
       <created>1648877679562</created>
@@ -380,16 +381,24 @@
       <option name="project" value="LOCAL" />
       <updated>1659336963025</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="update: Merge remote-tracking branch 'origin/master'&#10;&#10;# Conflicts:&#10;#&#9;.idea/workspace.xml">
+      <created>1659611157953</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1659611157953</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="101645000" />
+    <option name="totallyTimeSpent" value="102856000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="2781" y="292" width="994" height="775" extended-state="0" />
+    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.31156316" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.32441112" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="UI Designer" order="3" />
@@ -576,10 +585,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/contracts/access/IAccessControl.sol">
+    <entry file="file://$PROJECT_DIR$/contracts/token/ERC20/IERC20.sol">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="312">
-          <caret line="8" column="22" selection-start-line="8" selection-start-column="22" selection-end-line="8" selection-end-column="22" />
+        <state relative-caret-position="273">
+          <caret line="7" column="19" selection-start-line="7" selection-start-column="19" selection-end-line="7" selection-end-column="19" />
         </state>
       </provider>
     </entry>
@@ -590,10 +599,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/contracts/token/ERC20/IERC20.sol">
+    <entry file="file://$PROJECT_DIR$/contracts/access/IAccessControl.sol">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-649">
-          <caret line="7" column="19" selection-start-line="7" selection-start-column="19" selection-end-line="7" selection-end-column="19" />
+        <state relative-caret-position="312">
+          <caret line="8" column="22" selection-start-line="8" selection-start-column="22" selection-end-line="8" selection-end-column="22" />
         </state>
       </provider>
     </entry>
