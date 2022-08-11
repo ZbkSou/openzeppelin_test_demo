@@ -91,7 +91,7 @@ contract ERC20 is Context, IERC20, IEC20Metadata {
         address owner = _msgSender();
         uint256 currentAllowance = allowance(owner, spender);
         require(currentAllowance >= subtractedValue, "ERC20: decreased allowance below zero");
-        unchecked{
+        unchecked {
     _approve(owner, spender, currentAllowance - subtractedValue);
     }
         return true;
@@ -104,7 +104,7 @@ contract ERC20 is Context, IERC20, IEC20Metadata {
         _beforeTokenTransfer(from, to, amount);
         uint256 fromBalance = _balances[from];
         require(fromBalance >= amount, "ERC20: transfer amount exceeds balance");
-        unchecked{
+        unchecked {
     _balances[from] = fromBalance - amount;
     }
         _balances[to] += amount;
@@ -130,7 +130,7 @@ contract ERC20 is Context, IERC20, IEC20Metadata {
 
         uint256 accountBalance = _balances[account];
         require(accountBalance >= amount, "ERC20: burn amount exceeds balance");
-        unchecked{
+        unchecked {
     _balances[account] = accountBalance - amount;
     }
         _totalSupply -= amount;
@@ -154,7 +154,7 @@ contract ERC20 is Context, IERC20, IEC20Metadata {
         emit Approval(owner, spender, amount);
     }
     /**
-    * @dev 支付授权， 减少 amount 授权额度
+    * @dev  减少 amount 授权额度,实际支付需要调用支付
     */
     function _spendAllowance(
         address owner,
