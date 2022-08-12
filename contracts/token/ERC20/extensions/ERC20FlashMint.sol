@@ -3,7 +3,7 @@ pragma solidity ^0.8.0;
 import "..\..\..\interfaces\IERC3156FlashLender.sol";
 import "..\ERC20.sol";
 /**
- * @dev
+ * @dev 使 token 支持闪电带功能
  * @notice
  * @author zhao
  */
@@ -37,6 +37,10 @@ abstract contract ERC20FlashMint is ERC20, IERC3156FlashLender {
         return address(0);
     }
 
+    /**
+     * @notice 开始闪电贷，增发 token  执行贷款人逻辑，之后销毁 增发token
+     * @return
+     */
     function flashLoan(
         IERC3156FlashBorrower receiver,
         address token,
